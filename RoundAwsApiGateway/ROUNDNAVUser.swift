@@ -18,7 +18,7 @@ import Foundation
 import AWSCore
 
  
-public class ROUNDAPIUser : AWSModel {
+public class ROUNDNAVUser : AWSModel {
     
     /** Identifier for the user. */
     var id: NSNumber?
@@ -28,6 +28,8 @@ public class ROUNDAPIUser : AWSModel {
     var lastname: String?
     /** The user&#39;s Email address. */
     var email: String?
+    /** The coginto user pool username */
+    var username: String?
     /** The user&#39;s Facebook ID. */
     var facebookId: String?
     /** The user&#39;s Google ID. */
@@ -45,6 +47,7 @@ public class ROUNDAPIUser : AWSModel {
 		params["firstname"] = "firstname"
 		params["lastname"] = "lastname"
 		params["email"] = "email"
+		params["username"] = "username"
 		params["facebookId"] = "facebook_id"
 		params["googleId"] = "google_id"
 		params["twitterId"] = "twitter_id"

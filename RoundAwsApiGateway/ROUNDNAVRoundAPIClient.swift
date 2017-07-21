@@ -17,12 +17,12 @@
 import AWSCore
 import AWSAPIGateway
 
-public class ROUNDAPIRoundAPIClient: AWSAPIGatewayClient {
+public class ROUNDNAVRoundAPIClient: AWSAPIGatewayClient {
 
-	static let AWSInfoClientKey = "ROUNDAPIRoundAPIClient"
+	static let AWSInfoClientKey = "ROUNDNAVRoundAPIClient"
 
 	private static let _serviceClients = AWSSynchronizedMutableDictionary()
-	private static let _defaultClient:ROUNDAPIRoundAPIClient = {
+	private static let _defaultClient:ROUNDNAVRoundAPIClient = {
 		var serviceConfiguration: AWSServiceConfiguration? = nil
         let serviceInfo = AWSInfo.default().defaultServiceInfo(AWSInfoClientKey)
         if let serviceInfo = serviceInfo {
@@ -33,7 +33,7 @@ public class ROUNDAPIRoundAPIClient: AWSAPIGatewayClient {
             serviceConfiguration = AWSServiceConfiguration(region: .Unknown, credentialsProvider: nil)
         }
         
-        return ROUNDAPIRoundAPIClient(configuration: serviceConfiguration!)
+        return ROUNDNAVRoundAPIClient(configuration: serviceConfiguration!)
 	}()
     
 	/**
@@ -51,14 +51,14 @@ public class ROUNDAPIRoundAPIClient: AWSAPIGatewayClient {
 	
 	 Then call the following to get the default service client:
 	
-	     let serviceClient = ROUNDAPIRoundAPIClient.default()
+	     let serviceClient = ROUNDNAVRoundAPIClient.default()
 
-     Alternatively, this configuration could also be set in the `info.plist` file of your app under `AWS` dictionary with a configuration dictionary by name `ROUNDAPIRoundAPIClient`.
+     Alternatively, this configuration could also be set in the `info.plist` file of your app under `AWS` dictionary with a configuration dictionary by name `ROUNDNAVRoundAPIClient`.
 	
 	 @return The default service client.
 	 */ 
 	 
-	public class func `default`() -> ROUNDAPIRoundAPIClient{
+	public class func `default`() -> ROUNDNAVRoundAPIClient{
 		return _defaultClient
 	}
 
@@ -70,7 +70,7 @@ public class ROUNDAPIRoundAPIClient: AWSAPIGatewayClient {
 	     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 	         let credentialProvider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityPoolId: "YourIdentityPoolId")
 	         let configuration = AWSServiceConfiguration(region: .USWest2, credentialsProvider: credentialProvider)
-	         ROUNDAPIRoundAPIClient.registerClient(withConfiguration: configuration, forKey: "USWest2ROUNDAPIRoundAPIClient")
+	         ROUNDNAVRoundAPIClient.registerClient(withConfiguration: configuration, forKey: "USWest2ROUNDNAVRoundAPIClient")
 	
 	         return true
 	     }
@@ -78,7 +78,7 @@ public class ROUNDAPIRoundAPIClient: AWSAPIGatewayClient {
 	 Then call the following to get the service client:
 	
 	
-	     let serviceClient = ROUNDAPIRoundAPIClient.client(forKey: "USWest2ROUNDAPIRoundAPIClient")
+	     let serviceClient = ROUNDNAVRoundAPIClient.client(forKey: "USWest2ROUNDNAVRoundAPIClient")
 	
 	 @warning After calling this method, do not modify the configuration object. It may cause unspecified behaviors.
 	
@@ -87,7 +87,7 @@ public class ROUNDAPIRoundAPIClient: AWSAPIGatewayClient {
 	 */
 	
 	public class func registerClient(withConfiguration configuration: AWSServiceConfiguration, forKey key: String){
-		_serviceClients.setObject(ROUNDAPIRoundAPIClient(configuration: configuration), forKey: key  as NSString);
+		_serviceClients.setObject(ROUNDNAVRoundAPIClient(configuration: configuration), forKey: key  as NSString);
 	}
 
 	/**
@@ -98,21 +98,21 @@ public class ROUNDAPIRoundAPIClient: AWSAPIGatewayClient {
 	     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 	         let credentialProvider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityPoolId: "YourIdentityPoolId")
 	         let configuration = AWSServiceConfiguration(region: .USWest2, credentialsProvider: credentialProvider)
-	         ROUNDAPIRoundAPIClient.registerClient(withConfiguration: configuration, forKey: "USWest2ROUNDAPIRoundAPIClient")
+	         ROUNDNAVRoundAPIClient.registerClient(withConfiguration: configuration, forKey: "USWest2ROUNDNAVRoundAPIClient")
 	
 	         return true
 	     }
 	
 	 Then call the following to get the service client:
 	 
-	 	let serviceClient = ROUNDAPIRoundAPIClient.client(forKey: "USWest2ROUNDAPIRoundAPIClient")
+	 	let serviceClient = ROUNDNAVRoundAPIClient.client(forKey: "USWest2ROUNDNAVRoundAPIClient")
 	 
 	 @param key A string to identify the service client.
 	 @return An instance of the service client.
 	 */
-	public class func client(forKey key: String) -> ROUNDAPIRoundAPIClient {
+	public class func client(forKey key: String) -> ROUNDNAVRoundAPIClient {
 		objc_sync_enter(self)
-		if let client: ROUNDAPIRoundAPIClient = _serviceClients.object(forKey: key) as? ROUNDAPIRoundAPIClient {
+		if let client: ROUNDNAVRoundAPIClient = _serviceClients.object(forKey: key) as? ROUNDNAVRoundAPIClient {
 			objc_sync_exit(self)
 		    return client
 		}
@@ -120,10 +120,10 @@ public class ROUNDAPIRoundAPIClient: AWSAPIGatewayClient {
 		let serviceInfo = AWSInfo.default().defaultServiceInfo(AWSInfoClientKey)
 		if let serviceInfo = serviceInfo {
 			let serviceConfiguration = AWSServiceConfiguration(region: serviceInfo.region, credentialsProvider: serviceInfo.cognitoCredentialsProvider)
-			ROUNDAPIRoundAPIClient.registerClient(withConfiguration: serviceConfiguration!, forKey: key)
+			ROUNDNAVRoundAPIClient.registerClient(withConfiguration: serviceConfiguration!, forKey: key)
 		}
 		objc_sync_exit(self)
-		return _serviceClients.object(forKey: key) as! ROUNDAPIRoundAPIClient;
+		return _serviceClients.object(forKey: key) as! ROUNDNAVRoundAPIClient;
 	}
 
 	/**
@@ -161,7 +161,7 @@ public class ROUNDAPIRoundAPIClient: AWSAPIGatewayClient {
      
      return type: 
      */
-    public func v1TripPost(body: ROUNDAPITrip) -> AWSTask<AnyObject> {
+    public func v1TripPost(body: ROUNDNAVTrip) -> AWSTask<AnyObject> {
 	    let headerParameters = [
                    "Content-Type": "application/json",
                    "Accept": "application/json",
@@ -204,7 +204,7 @@ public class ROUNDAPIRoundAPIClient: AWSAPIGatewayClient {
      
      return type: 
      */
-    public func v1UserPost(body: ROUNDAPIUser) -> AWSTask<AnyObject> {
+    public func v1UserPost(body: ROUNDNAVUser) -> AWSTask<AnyObject> {
 	    let headerParameters = [
                    "Content-Type": "application/json",
                    "Accept": "application/json",

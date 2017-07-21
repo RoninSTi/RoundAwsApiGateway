@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C2F13861F219AF400A473A0 /* ROUNDNAVRoundAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F13821F219AF300A473A0 /* ROUNDNAVRoundAPIClient.swift */; };
+		4C2F13871F219AF400A473A0 /* ROUNDNAVTrip_coordinates_item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F13831F219AF300A473A0 /* ROUNDNAVTrip_coordinates_item.swift */; };
+		4C2F13881F219AF400A473A0 /* ROUNDNAVTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F13841F219AF400A473A0 /* ROUNDNAVTrip.swift */; };
+		4C2F13891F219AF400A473A0 /* ROUNDNAVUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F13851F219AF400A473A0 /* ROUNDNAVUser.swift */; };
 		4C9F397A1F21359B00F926DA /* RoundAwsApiGateway.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C9F39781F21359B00F926DA /* RoundAwsApiGateway.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C9F39861F2135CC00F926DA /* AWSApiGatewayBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C9F39801F2135CC00F926DA /* AWSApiGatewayBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C9F39881F2135CC00F926DA /* ROUNDAPIRoundAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9F39821F2135CC00F926DA /* ROUNDAPIRoundAPIClient.swift */; };
-		4C9F39891F2135CC00F926DA /* ROUNDAPITrip_coordinates_item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9F39831F2135CC00F926DA /* ROUNDAPITrip_coordinates_item.swift */; };
-		4C9F398A1F2135CC00F926DA /* ROUNDAPITrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9F39841F2135CC00F926DA /* ROUNDAPITrip.swift */; };
-		4C9F398B1F2135CC00F926DA /* ROUNDAPIUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9F39851F2135CC00F926DA /* ROUNDAPIUser.swift */; };
 		C1ECF2929E558FF623FE6A23 /* Pods_RoundAwsApiGateway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E45EB3EA4D7EB9FB3063BDA /* Pods_RoundAwsApiGateway.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E45EB3EA4D7EB9FB3063BDA /* Pods_RoundAwsApiGateway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoundAwsApiGateway.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C2F13821F219AF300A473A0 /* ROUNDNAVRoundAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ROUNDNAVRoundAPIClient.swift; sourceTree = "<group>"; };
+		4C2F13831F219AF300A473A0 /* ROUNDNAVTrip_coordinates_item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ROUNDNAVTrip_coordinates_item.swift; sourceTree = "<group>"; };
+		4C2F13841F219AF400A473A0 /* ROUNDNAVTrip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ROUNDNAVTrip.swift; sourceTree = "<group>"; };
+		4C2F13851F219AF400A473A0 /* ROUNDNAVUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ROUNDNAVUser.swift; sourceTree = "<group>"; };
 		4C9F39751F21359B00F926DA /* RoundAwsApiGateway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RoundAwsApiGateway.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C9F39781F21359B00F926DA /* RoundAwsApiGateway.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundAwsApiGateway.h; sourceTree = "<group>"; };
 		4C9F39791F21359B00F926DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C9F39801F2135CC00F926DA /* AWSApiGatewayBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSApiGatewayBridge.h; sourceTree = "<group>"; };
-		4C9F39821F2135CC00F926DA /* ROUNDAPIRoundAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ROUNDAPIRoundAPIClient.swift; sourceTree = "<group>"; };
-		4C9F39831F2135CC00F926DA /* ROUNDAPITrip_coordinates_item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ROUNDAPITrip_coordinates_item.swift; sourceTree = "<group>"; };
-		4C9F39841F2135CC00F926DA /* ROUNDAPITrip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ROUNDAPITrip.swift; sourceTree = "<group>"; };
-		4C9F39851F2135CC00F926DA /* ROUNDAPIUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ROUNDAPIUser.swift; sourceTree = "<group>"; };
 		DD29A04AB155DF85DE268DE5 /* Pods-RoundAwsApiGateway.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoundAwsApiGateway.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoundAwsApiGateway/Pods-RoundAwsApiGateway.debug.xcconfig"; sourceTree = "<group>"; };
 		FBE844132BAA04BD828EE7C7 /* Pods-RoundAwsApiGateway.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoundAwsApiGateway.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoundAwsApiGateway/Pods-RoundAwsApiGateway.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,11 +63,11 @@
 		4C9F39771F21359B00F926DA /* RoundAwsApiGateway */ = {
 			isa = PBXGroup;
 			children = (
+				4C2F13821F219AF300A473A0 /* ROUNDNAVRoundAPIClient.swift */,
+				4C2F13831F219AF300A473A0 /* ROUNDNAVTrip_coordinates_item.swift */,
+				4C2F13841F219AF400A473A0 /* ROUNDNAVTrip.swift */,
+				4C2F13851F219AF400A473A0 /* ROUNDNAVUser.swift */,
 				4C9F39801F2135CC00F926DA /* AWSApiGatewayBridge.h */,
-				4C9F39821F2135CC00F926DA /* ROUNDAPIRoundAPIClient.swift */,
-				4C9F39831F2135CC00F926DA /* ROUNDAPITrip_coordinates_item.swift */,
-				4C9F39841F2135CC00F926DA /* ROUNDAPITrip.swift */,
-				4C9F39851F2135CC00F926DA /* ROUNDAPIUser.swift */,
 				4C9F39781F21359B00F926DA /* RoundAwsApiGateway.h */,
 				4C9F39791F21359B00F926DA /* Info.plist */,
 			);
@@ -208,10 +208,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C9F39881F2135CC00F926DA /* ROUNDAPIRoundAPIClient.swift in Sources */,
-				4C9F39891F2135CC00F926DA /* ROUNDAPITrip_coordinates_item.swift in Sources */,
-				4C9F398B1F2135CC00F926DA /* ROUNDAPIUser.swift in Sources */,
-				4C9F398A1F2135CC00F926DA /* ROUNDAPITrip.swift in Sources */,
+				4C2F13881F219AF400A473A0 /* ROUNDNAVTrip.swift in Sources */,
+				4C2F13891F219AF400A473A0 /* ROUNDNAVUser.swift in Sources */,
+				4C2F13871F219AF400A473A0 /* ROUNDNAVTrip_coordinates_item.swift in Sources */,
+				4C2F13861F219AF400A473A0 /* ROUNDNAVRoundAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

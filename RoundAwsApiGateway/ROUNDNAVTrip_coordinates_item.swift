@@ -18,7 +18,7 @@ import Foundation
 import AWSCore
 
  
-public class ROUNDAPITrip_coordinates_item : AWSModel {
+public class ROUNDNAVTrip_coordinates_item : AWSModel {
     
     var latitude: NSNumber?
     var longitude: NSNumber?

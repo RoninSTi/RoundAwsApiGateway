@@ -18,7 +18,7 @@ import Foundation
 import AWSCore
 
  
-public class ROUNDAPITrip : AWSModel {
+public class ROUNDNAVTrip : AWSModel {
     
     /** Identifier for the trip. */
     var id: String?
@@ -44,7 +44,7 @@ public class ROUNDAPITrip : AWSModel {
     var createdAt: NSDate?
     /** The updated date of this Trip. */
     var updatedAt: NSDate?
-    var coordinates: [ROUNDAPITrip_coordinates_item]?
+    var coordinates: [ROUNDNAVTrip_coordinates_item]?
     /** The user&#39;s Cognito ID. */
     var cognitoId: String?
     
@@ -82,6 +82,6 @@ public class ROUNDAPITrip : AWSModel {
 		})
 	}
 	class func coordinatesJSONTransformer() -> ValueTransformer{
-		return  ValueTransformer.awsmtl_JSONArrayTransformer(withModelClass: ROUNDAPITrip_coordinates_item.self);
+		return  ValueTransformer.awsmtl_JSONArrayTransformer(withModelClass: ROUNDNAVTrip_coordinates_item.self);
 	}
 }
