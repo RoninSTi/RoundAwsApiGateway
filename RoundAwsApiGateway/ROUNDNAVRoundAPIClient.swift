@@ -202,9 +202,9 @@ public class ROUNDNAVRoundAPIClient: AWSAPIGatewayClient {
      
      @param body 
      
-     return type: 
+     return type: ROUNDNAVUser
      */
-    public func v1UserPost(body: ROUNDNAVUser) -> AWSTask<AnyObject> {
+    public func v1UserPost(body: ROUNDNAVUser) -> AWSTask<ROUNDNAVUser> {
 	    let headerParameters = [
                    "Content-Type": "application/json",
                    "Accept": "application/json",
@@ -215,7 +215,7 @@ public class ROUNDNAVRoundAPIClient: AWSAPIGatewayClient {
 	    
 	    let pathParameters:[String:Any] = [:]
 	    
-	    return self.invokeHTTPRequest("POST", urlString: "/v1/user", pathParameters: pathParameters, queryParameters: queryParameters, headerParameters: headerParameters, body: body, responseClass: nil)
+	    return self.invokeHTTPRequest("POST", urlString: "/v1/user", pathParameters: pathParameters, queryParameters: queryParameters, headerParameters: headerParameters, body: body, responseClass: ROUNDNAVUser.self) as! AWSTask<ROUNDNAVUser>
 	}
 
 	
